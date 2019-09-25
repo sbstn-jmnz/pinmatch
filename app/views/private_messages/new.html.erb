@@ -1,0 +1,12 @@
+<h1>PrivateMessages#new</h1>
+<p>Find me in app/views/private_messages/new.html.erb</p>
+
+<% @all_messages.each do |pm|%>
+  <%= pm.content %></br>
+<% end %>
+
+<%= form_with(model: @pm, local: true) do |f| %>
+ <%= f.label :content %>
+ <%= f.text_area :content %>
+ <%= f.submit %>
+<% end %>
