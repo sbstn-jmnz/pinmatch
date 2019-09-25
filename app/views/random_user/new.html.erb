@@ -1,0 +1,7 @@
+<h1>RandomUser#new</h1>
+<p>Find me in app/views/random_user/new.html.erb</p>
+<%= @random_user.inspect %>
+
+<%= button_to  "Me gusta", like_path(@interaction), method: :patch %>
+
+<%= button_to  "No me gusta", dislike_path(@interaction), method: :patch %>
